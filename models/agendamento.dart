@@ -1,5 +1,4 @@
 // CLASSE AGENDAMENTO
-import 'package:intl/intl.dart';
 
 class Agendamento {
   final String localVisita;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:super_visita/models/agendamento.dart';
-import 'package:super_visita/screens/formulario_agendamento.dart';
+import 'package:super_visita/screens/tela_agendamento.dart';
 
 // WIDGET (TELA) PARA VISITAS AGENDADAS
 class ListaVisitasAgendadas extends StatefulWidget {
@@ -33,7 +33,7 @@ class ListaVisitasAgendadasState extends State<ListaVisitasAgendadas> {
           onPressed: () {
             final Future<Agendamento> future =
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return FormularioAgendamento();
+              return TelaAgendamento();
             }));
             future.then((agendamentoRecebido) {
               Future.delayed(Duration(seconds: 1), () {
